@@ -17,9 +17,10 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     respond_to do |format|
+      p @post
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render root_path, status: :created, location: @post }
+        format.html { redirect_to :root, notice: "Post was successfully updated." }
+        format.json { render :index, status: :ok, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @post.errors, status: :unprocessable_entity }
