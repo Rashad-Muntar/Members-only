@@ -4,6 +4,6 @@ module PostsHelper
   end
 
   def show_user_name
-    content_tag(:td, current_user.email) unless current_user.nil?
+    content_tag(:td, current_user.username) unless current_user.nil?
   end
 end
