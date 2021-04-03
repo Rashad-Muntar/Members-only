@@ -12,9 +12,9 @@
 
   <body>
 
-    <%= link_to 'Sign up', new_user_registration_path %>
-    <%= link_to 'Sign in', user_session_path %>
-    <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+  <%= show_sign_out %>
+  <%= link_to 'Sign up', new_user_registration_path %>
+  <%= show_sign_in%>
     <%= yield %>
   </body>
 </html>
