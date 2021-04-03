@@ -18,7 +18,7 @@
         <td><%= post.title %></td>
         <td><%= post.body %></td>
         <%= show_user_post(post) %>
-        <%= show_user_name %>
+        <td><%= display_username(post) %></td>
       </tr>
     <% end %>
   </tbody>
