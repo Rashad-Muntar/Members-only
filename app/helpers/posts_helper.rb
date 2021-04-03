@@ -10,5 +10,4 @@ module PostsHelper
   def show_user_name
     content_tag(:td, current_user.username) unless current_user.nil?
   end
-
 end

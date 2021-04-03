@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       p @post
       if @post.save
-        format.html { redirect_to :root, notice: "Post was successfully updated." }
+        format.html { redirect_to :root, notice: 'Post was successfully updated.' }
         format.json { render :index, status: :ok, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
