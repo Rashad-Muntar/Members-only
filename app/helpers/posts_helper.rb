@@ -1,6 +1,4 @@
 module PostsHelper
-
-
   def show_user_post(post)
     content_tag(:td, post.user_id) unless current_user.nil?
   end
@@ -19,7 +17,5 @@ module PostsHelper
         content_tag(:li, error.full_message)
       end.join.html_safe
     end
-end
-
-
+  end
 end
