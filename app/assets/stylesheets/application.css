@@ -13,10 +13,10 @@
  *= require_tree .
  *= require_self
  */
-.creds{
-    display: flex;
+.creds {
+  display: flex;
 }
 
-h3{
-    padding-right: 20px;
+h3 {
+  padding-right: 20px;
 }

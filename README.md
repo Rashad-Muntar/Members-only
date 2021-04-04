@@ -20,8 +20,10 @@ To set up a local version of this project, a collection of steps have been put t
 - Run `git clone https://github.com/Rashad-Muntar/Members-only` to download the source file.
 - Now that you have a local copy of the project, navigate to the root of the project folder from your terminal.
 - Run `bundle install` to install all dependencies in the Gemfile file.
+- run `yarn init`to inittialize yarn
 - Run `rails db:migrate` to generate database tables.
 - Run `rails server` to get a server running on your local machine.
+
 
 ### Other Dependencies
 
